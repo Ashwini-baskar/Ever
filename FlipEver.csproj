@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0512EF4E-AE13-4D3B-957A-4CA78E14AF04}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FlipEver</RootNamespace>
+    <AssemblyName>FlipEver</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <ApplicationInsightsResourceId />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>C:\Users\baswini\Downloads\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DownloadFile.aspx" />
+    <Content Include="FlipEverHomePage.asmx" />
+    <Content Include="FlipEverHomePage.aspx" />
+    <Content Include="FlipEverLogin.asmx" />
+    <Content Include="FlipEverLogin.aspx" />
+    <Content Include="FlipEverReg.aspx" />
+    <Content Include="img\i.jpg" />
+    <Content Include="img\imgres.htm" />
+    <Content Include="img\s.jpg" />
+    <Content Include="img\stubeww.txt" />
+    <Content Include="img\u.jpg" />
+    <Content Include="img\z.png" />
+    <Content Include="Script\Internal\Pagescript\FlipEverHomePage.js" />
+    <Content Include="Script\Internal\Pagescript\FlipEverLogin.js" />
+    <Content Include="Script\Internal\Pagescript\FlipEverReg.js" />
+    <Content Include="style\FlipEver.css" />
+    <Content Include="Web.config" />
+    <Content Include="FlipEverDownLoadImg.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DownloadFile.aspx.cs">
+      <DependentUpon>DownloadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownloadFile.aspx.designer.cs">
+      <DependentUpon>DownloadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadFilehandler.ashx.cs">
+      <DependentUpon>DownloadFilehandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadHandler.ashx.cs">
+      <DependentUpon>DownloadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="FlipEver.cs" />
+    <Compile Include="FlipeverFileupload.ashx.cs">
+      <DependentUpon>FlipeverFileupload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="FlipEverHomePage.asmx.cs">
+      <DependentUpon>FlipEverHomePage.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FlipEverHomePage.aspx.cs">
+      <DependentUpon>FlipEverHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FlipEverHomePage.aspx.designer.cs">
+      <DependentUpon>FlipEverHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FlipEverLogin.asmx.cs">
+      <DependentUpon>FlipEverLogin.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FlipEverLogin.aspx.cs">
+      <DependentUpon>FlipEverLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FlipEverLogin.aspx.designer.cs">
+      <DependentUpon>FlipEverLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FlipEverReg.aspx.cs">
+      <DependentUpon>FlipEverReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FlipEverReg.aspx.designer.cs">
+      <DependentUpon>FlipEverReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FlipEverDownLoadImg.aspx.cs">
+      <DependentUpon>FlipEverDownLoadImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FlipEverDownLoadImg.aspx.designer.cs">
+      <DependentUpon>FlipEverDownLoadImg.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FlipeverFileupload.ashx" />
+    <Content Include="DownloadHandler.ashx" />
+    <Content Include="DownloadFilehandler.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MediaUpload\" />
+    <Folder Include="Script\External\" />
+    <Folder Include="uploads\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53272</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53272/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
